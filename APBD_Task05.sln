@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APBD_Task05.Entities", "src\APBD_Task05.Entities\APBD_Task05.Entities.csproj", "{6F3A6AB9-8987-4451-8101-FEA26D320239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APBD_Task05.Logic", "src\APBD_Task05.Logic\APBD_Task05.Logic.csproj", "{E06F258E-1618-48CC-88CC-91514AE91EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APBD_Task05.Presentation", "src\APBD_Task05.Presentation\APBD_Task05.Presentation.csproj", "{7C213D0A-E6E1-4AA4-B6A1-60897DE7A0FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F3A6AB9-8987-4451-8101-FEA26D320239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3A6AB9-8987-4451-8101-FEA26D320239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3A6AB9-8987-4451-8101-FEA26D320239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3A6AB9-8987-4451-8101-FEA26D320239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E06F258E-1618-48CC-88CC-91514AE91EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06F258E-1618-48CC-88CC-91514AE91EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06F258E-1618-48CC-88CC-91514AE91EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06F258E-1618-48CC-88CC-91514AE91EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C213D0A-E6E1-4AA4-B6A1-60897DE7A0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C213D0A-E6E1-4AA4-B6A1-60897DE7A0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C213D0A-E6E1-4AA4-B6A1-60897DE7A0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C213D0A-E6E1-4AA4-B6A1-60897DE7A0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
