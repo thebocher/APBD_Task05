@@ -6,18 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 namespace APBD_Task05.Presentation.Controllers;
 
 [ApiController]
-[Route("devices/")]
+[Route("devices")]
 public class DeviceController
 {
     private readonly IDeviceManager _deviceManager = DeviceManagerFactory.GetDatabaseDeviceManager();
     
-    [HttpGet("/")]
+    [HttpGet]
     public IResult GetAllDevices()
     {
         return Results.Ok(Database.Devices);
     }
 
-    [HttpGet("/{id}")]
+    [HttpGet("{id}")]
     public IResult GetDevice(string id)
     {
         try
@@ -30,19 +30,19 @@ public class DeviceController
         }
     }
 
-    [HttpPost("/smart-watch")]
+    [HttpPost("smart-watch")]
     public IResult AddDevice(SmartWatch device)
     {
         _deviceManager.AddDevice(device);
         return Results.Ok(device);
     }
-    [HttpPost("/personal-computer")]
+    [HttpPost("personal-computer")]
     public IResult AddDevice(PersonalComputer device)
     {
         _deviceManager.AddDevice(device);
         return Results.Ok(device);
     }
-    [HttpPost("/embedded-device")]
+    [HttpPost("embedded-device")]
     public IResult AddDevice(EmbeddedDevice device)
     {
         _deviceManager.AddDevice(device);
@@ -50,7 +50,7 @@ public class DeviceController
     }
     
 
-    [HttpPut("/smart-watch/{id}")]
+    [HttpPut("smart-watch/{id}")]
     public IResult UpdateSmartWatch(string id, [FromBody] SmartWatch device)
     {
         _deviceManager.EditDeviceData(id, device);
@@ -64,7 +64,7 @@ public class DeviceController
         }
     }
     
-    [HttpPut("/personal-computer/{id}")]
+    [HttpPut("personal-computer/{id}")]
     public IResult UpdatePersonalComputer(string id, [FromBody] PersonalComputer device)
     {
         _deviceManager.EditDeviceData(id, device);
@@ -78,7 +78,7 @@ public class DeviceController
         }
     }
     
-    [HttpPut("/embedded-device/{id}")]
+    [HttpPut("embedded-device/{id}")]
     public IResult UpdateEmbeddedDevice(string id, [FromBody] EmbeddedDevice device)
     {
         _deviceManager.EditDeviceData(id, device);
@@ -92,7 +92,7 @@ public class DeviceController
         }
     }
 
-    [HttpDelete("/{id}")]
+    [HttpDelete("{id}")]
     public IResult DeleteDevice(string id)
     {
         try
