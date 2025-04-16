@@ -30,19 +30,19 @@ public class DeviceController
         }
     }
 
-    [HttpPost("smart-watch")]
+    [HttpPost("smart-watches")]
     public IResult AddDevice(SmartWatch device)
     {
         _deviceManager.AddDevice(device);
         return Results.Ok(device);
     }
-    [HttpPost("personal-computer")]
+    [HttpPost("personal-computers")]
     public IResult AddDevice(PersonalComputer device)
     {
         _deviceManager.AddDevice(device);
         return Results.Ok(device);
     }
-    [HttpPost("embedded-device")]
+    [HttpPost("embedded-devices")]
     public IResult AddDevice(EmbeddedDevice device)
     {
         _deviceManager.AddDevice(device);
@@ -50,7 +50,7 @@ public class DeviceController
     }
     
 
-    [HttpPut("smart-watch/{id}")]
+    [HttpPut("smart-watches/{id}")]
     public IResult UpdateSmartWatch(string id, [FromBody] SmartWatch device)
     {
         _deviceManager.EditDeviceData(id, device);
@@ -64,7 +64,7 @@ public class DeviceController
         }
     }
     
-    [HttpPut("personal-computer/{id}")]
+    [HttpPut("personal-computers/{id}")]
     public IResult UpdatePersonalComputer(string id, [FromBody] PersonalComputer device)
     {
         _deviceManager.EditDeviceData(id, device);
@@ -78,7 +78,7 @@ public class DeviceController
         }
     }
     
-    [HttpPut("embedded-device/{id}")]
+    [HttpPut("embedded-devices/{id}")]
     public IResult UpdateEmbeddedDevice(string id, [FromBody] EmbeddedDevice device)
     {
         _deviceManager.EditDeviceData(id, device);
